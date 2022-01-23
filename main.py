@@ -1,5 +1,6 @@
-import discord
+import discord, webserver
 from discord.ext import commands
+from webserver import keep_alive
 
 
 
@@ -19,5 +20,5 @@ async def on_ready():
 
 
   
-
-bot.run('TOKEN')
+keep_alive()
+bot.run('TOKEN', bot=True)

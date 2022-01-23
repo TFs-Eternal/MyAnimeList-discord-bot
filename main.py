@@ -1,8 +1,8 @@
-import discord, webserver
+import discord, webserver, os
 from discord.ext import commands
 from webserver import keep_alive
 
-
+TOKEN = os.getenv("ANIME")
 
 intents = discord.Intents.default()
 intents.members = True
